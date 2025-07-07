@@ -28,3 +28,10 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Ignore auto-generated components definitions
+components.d.ts
+
+# 略過翻譯檔案
+public/i18n-translation.csv
+public/*.csv

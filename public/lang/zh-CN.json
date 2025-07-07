@@ -1,0 +1,13 @@
+{
+  "field": {
+    "otp": "OTP",
+    "password": "密码",
+    "username": "用戶名称",
+    "email": "Email"
+  },
+  "language": {
+    "en-US": "English",
+    "zh-CN": "中文 (简体)",
+    "zh-TW": "中文 (繁体)"
+  }
+}

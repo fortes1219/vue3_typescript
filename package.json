@@ -10,7 +10,12 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "i18n:en-to-csv": "node i18n-converter.js public/lang/en-US.json public/en-US.csv",
+    "i18n:tw-to-csv": "node i18n-converter.js public/lang/zh-TW.json public/zh-TW.csv zh-TW",
+    "i18n:cn-to-csv": "node i18n-converter.js public/lang/zh-CN.json public/zh-CN.csv zh-CN",
+    "i18n:json-to-csv": "node i18n-converter.js --merge public/lang/ public/i18n.csv",
+    "i18n:csv-to-json": "node i18n-converter.js --csv2json public/i18n.csv public/lang/"
   },
   "dependencies": {
     "@ts-rest/core": "^3.52.1",
@@ -19,6 +24,7 @@
     "axios": "^1.10.0",
     "pinia": "^3.0.3",
     "vue": "^3.5.17",
+    "vue-i18n": "^11.1.9",
     "vue-router": "^4.5.1",
     "zod": "^3.25.67"
   },
@@ -34,6 +40,7 @@
     "jiti": "^2.4.2",
     "npm-run-all2": "^8.0.4",
     "prettier": "3.5.3",
+    "sass": "^1.89.2",
     "typescript": "~5.8.0",
     "vite": "^7.0.0",
     "vite-plugin-vue-devtools": "^7.7.7",

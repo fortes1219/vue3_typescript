@@ -1,0 +1,13 @@
+{
+  "field": {
+    "otp": "OTP",
+    "password": "Password",
+    "username": "Username",
+    "email": "Email"
+  },
+  "language": {
+    "en-US": "English",
+    "zh-CN": "Chinese (Simplified)",
+    "zh-TW": "Chinese (Traditional)"
+  }
+}
